@@ -4,6 +4,6 @@ HTML (HyperText Markup language), är ett språk som programmerare kan använda 
 Med hjälp av HTML kan man skapa en layout av text och bilder i olika storlekar och typsnitt för sin hemsida.
 HTML består av tre huvuddelar:
 
-* '''<html></html>''' (Själva pappret som allt ligger på)
+* <html></html> (Själva pappret som allt ligger på)
 * '''<head></head>''' (Högst upp på pappret finns ett huvud för rubriker och underrubriker)
 * '''<body></body>''' (Där övriga saker som t.ex. brödtext, bilder och tabeller hamnar under)
