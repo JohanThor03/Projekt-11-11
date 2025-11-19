@@ -1,0 +1,263 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    /* MDU färgtema */
+    .bg-mdu {
+        background: linear-gradient(135deg, #f7f7f7 0%, #e5e5e5 100%);
+        min-height: 100vh;
+    }
+    .bg-mdu-primary {
+        background-color: #002f6c !important;
+    }
+    .text-mdu-primary {
+        color: #002f6c !important;
+    }
+
+    /* Layout och spacing */
+    .container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    header.container {
+        margin-bottom: 40px;
+        background: #fff;
+        border-radius: 24px;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    }
+
+        margin-bottom: 40px;
+        background: #fff;
+        border-radius: 24px;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    }
+
+    /* Rutorna/korten med extra avrundade kanter */
+    .card {
+        border: none;
+        border-radius: 24px;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+        margin-bottom: 0;
+    }
+    .card-title {
+        font-size: 1.5em;
+        margin-bottom: 16px;
+    }
+
+    .alert-info {
+        background-color: #e6f2ff;
+        border-color: #b3d1ff;
+        color: #002f6c;
+        border-radius: 24px;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    }
+
+    /* Nav och footer */
+    .navbar {
+        border-radius: 0 0 12px 12px;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    }
+    footer {
+        font-size: 1em;
+        border-radius: 24px 24px 0 0;
+        box-shadow: 0 -2px 12px rgba(0,0,0,0.07);
+        margin-top: 40px;
+    }
+
+    /* Text och kontrast */
+    body, .card, .alert-info, header.container {
+        color: #222;
+    }
+    .navbar, .bg-mdu-primary, footer {
+        color: #fff;
+    }
+
+    h1, h2, h3 {
+        font-weight: 700;
+        letter-spacing: 0.5px;
+    }
+
+    .blockquote-footer {
+        color: #555;
+    }
+
+    /* Responsivitet */
+    @media (max-width: 600px) {
+        .container {
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+        header.container {
+            padding: 24px 8px;
+        }
+    }
+
+    /* Kommentarer:
+       - Symmetrisk layout med centrerad container och mellanrum mellan sektioner.
+       - Mer professionell design med skuggor och rundade hörn.
+       - Behaglig kontrast mellan text och bakgrund.
+       - Responsiv för mobil och desktop.
+    */
+    margin: 10px 0;
+}
+
+.hero button {
+    background: #004080;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.gallery {
+    padding: 20px;
+    text-align: center;
+}
+
+.gallery h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.gallery .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    text-align: center;
+    background: #004080;
+    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.small-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(2px, 1fr));
+    gap: 1px;
+    padding: 10px;
+}
+
+.small-gallery img {
+    width: 2px;
+    height: 2px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f9;
+}
+
+.calculator {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+}
+
+#result {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    text-align: right;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    height: 50px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    background: #007BFF;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+button.clear {
+    grid-column: span 4;
+    background: #dc3545;
+}
+
+button.clear:hover {
+    background: #a71d2a;
+}
+
+/* MDU färgtema */
+.bg-mdu {
+    background: linear-gradient(135deg, #f7f7f7 0%, #e5e5e5 100%);
+}
+.bg-mdu-primary {
+    background-color: #002f6c !important;
+}
+.text-mdu-primary {
+    color: #002f6c !important;
+}
+
+/* Responsiv padding för hero och sektioner */
+header.container, section.container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Card och alert styling */
+.card {
+    border: 1px solid #002f6c;
+    border-radius: 10px;
+}
+.card-title {
+    font-size: 1.5em;
+}
+.alert-info {
+    background-color: #e6f2ff;
+    border-color: #b3d1ff;
+    color: #002f6c;
+    border-radius: 10px;
+}
+
+/* Footer styling */
+footer {
+    font-size: 1em;
+}
+
+/* Kommentarer:
+   - MDU-färger används för att ge sidan ett tydligt tema.
+   - Card och alert har rundade hörn för modern känsla.
+   - Sidan är responsiv tack vare Bootstrap.
+*/
